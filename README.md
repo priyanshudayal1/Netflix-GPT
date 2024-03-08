@@ -1,4 +1,16 @@
 ##Netflix-GPT
-
+-create react app
+-header
+-routing
 -Login form
 -signup form
+-validation in signup/signin form
+- useRef hook
+-firebase setup
+-deployment using firebase
+-creating signup user account
+-implemented sign-in and sign-up using firebas
+-created redux store -- userSlice
+-implemented signout
+-update profile
+-fetch movie from TMDB
