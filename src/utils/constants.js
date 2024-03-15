@@ -6,3 +6,4 @@ export const API_OPTIONS = {
   }
 };
 
+export const IMG_LINK="https://image.tmdb.org/t/p/w500/";

@@ -26,3 +26,8 @@
 -update store with trailer video data
 -embedded the youtube video and make it autoplay and mute
 -tailwind classes to make the container beautiful 
+-secondary component
+-build movie list
+-build movie card
+-made the browse page looks beautiful
+-usePopularMovies
