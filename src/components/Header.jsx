@@ -62,34 +62,34 @@ const Header = () => {
         {user ? (
           <div className="user-icon md:flex md:mt-4 md:mb-4 flex md:flex-nowrap flex-wrap md:gap-2 justify-center text-center mt-4">
             {showGPTSearch && (
+              <>
               <select
                 name="lang"
                 id="lang"
                 onChange={handleLanguageChange}
-                className="px-5 py-2 mr-4 rounded-lg bg-gray-900 text-white"
-              >
+                className="px-5 py-2 mr-4 rounded-lg bg-gray-900 text-white">
                 {SUPPORTED_LANGUAGEs.map((lang) => (
                   <option value={lang.identifier} key={lang.identifier}>
-                    {lang.language}
+                  {lang.language}
                   </option>
                 ))}
               </select>
+              </>
             )}
-
             <button
               className="px-5 py-2  bg-purple-800  text-white font-semibold rounded-lg shadow-md mr-3"
               onClick={() => handleGPTSearchClick()}
-            >
+            > { showGPTSearch ? <i class="fa-solid fa-house"></i> : <i class="fa-solid fa-magnifying-glass"></i>  } &nbsp;
              { showGPTSearch ? "Home Page" : "GPT Search" } 
             </button>
             <button className="px-6 py-2 md:block hidden rounded-lg  text-white shadow-sm mr-4 shadow-white  bg-opacity-95 bg-red-700">
-              {user.displayName}
+            <i class="fa-solid fa-user"></i> &nbsp;   {user.displayName}
             </button>
             <button
               onClick={handleSignOut}
               className="px-4 py-2 rounded-lg  text-white shadow-sm mr-4 bg-opacity-95 shadow-white  bg-red-700"
             >
-              Sign Out
+             <i class="fa-solid fa-right-from-bracket"></i> &nbsp; Sign Out
             </button>
           </div>
         ) : null}
