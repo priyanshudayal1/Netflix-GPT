@@ -5,7 +5,7 @@ import { MovieCard } from "./MovieCard";
 export const MovieList = ({ title, movies }) => {
 
   return (
-    <div className="px-6  bg-black text-white ">
+    <div className="px-6  text-white ">
       <h1 className="text-2xl py-4 font-bold">{title}</h1>
       <div className="flex overflow-x-scroll py-4 scroll-smooth">
         <div className="flex flex-row gap-2">

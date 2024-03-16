@@ -20,7 +20,7 @@ export const Browse = () => {
   usePopularShows();
   const GPTSearchView = useSelector((state) => state.gpt);
   return (
-    <div>
+    <div className="">
       <Header />
       {GPTSearchView.showGPTSearch ? (
         <GPTSearch />
