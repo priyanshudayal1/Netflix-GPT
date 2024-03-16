@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 export const SecondaryContainer = () => {
   const movies = useSelector((state) => state.movies);
   return (
-    <div className="-mt-40 relative bg-black">
+    <div className="-mt-16 md:-mt-40 relative bg-black">
       <MovieList
         title={"Now Playing Movies"}
         movies={movies.nowPlayingMovies}

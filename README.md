@@ -35,3 +35,10 @@
 -gpt search page
 ###-multi language feature in our APP
 -Integrate GPT apis
+-get openai api key
+-gpt search api call
+-fetch gpt movies suggestion from tmdb
+-reused movieList component
+-Memoiation
+-.env file to gitignore
+-added responsiveness

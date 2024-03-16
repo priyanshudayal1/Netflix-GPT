@@ -52,15 +52,15 @@ const Header = () => {
   const user = useSelector((store) => store.user);
   return (
     <div>
-      <div className="logo flex justify-between w-full absolute px-12 py-3 bg-gradient-to-b from-black  z-10">
-        <img
+      <div className="logo flex flex-col justify-between w-full absolute px-12 py-3 bg-gradient-to-b from-black z-10  md:flex-row ">
+        <img className="mx-auto md:mx-0"
           src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
           width={200}
           height={30}
           alt=""
         />
         {user ? (
-          <div className="user-icon text-center mt-4">
+          <div className="user-icon md:flex md:mt-4 md:mb-4 flex md:flex-nowrap flex-wrap md:gap-2 justify-center text-center mt-4">
             {showGPTSearch && (
               <select
                 name="lang"
@@ -77,12 +77,12 @@ const Header = () => {
             )}
 
             <button
-              className="px-5 py-2 bg-purple-800  text-white font-semibold rounded-lg shadow-md mr-3"
+              className="px-5 py-2  bg-purple-800  text-white font-semibold rounded-lg shadow-md mr-3"
               onClick={() => handleGPTSearchClick()}
             >
              { showGPTSearch ? "Home Page" : "GPT Search" } 
             </button>
-            <button className="px-6 py-2 rounded-lg  text-white shadow-sm mr-4 shadow-white  bg-opacity-95 bg-red-700">
+            <button className="px-6 py-2 md:block hidden rounded-lg  text-white shadow-sm mr-4 shadow-white  bg-opacity-95 bg-red-700">
               {user.displayName}
             </button>
             <button
