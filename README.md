@@ -31,3 +31,7 @@
 -build movie card
 -made the browse page looks beautiful
 -usePopularMovies
+-GPT Search bar
+-gpt search page
+###-multi language feature in our APP
+-Integrate GPT apis

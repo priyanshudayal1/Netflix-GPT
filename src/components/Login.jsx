@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_URL } from "../utils/constants";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -85,10 +86,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="bg-img absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt=""
-        />
+        <img src={BG_URL} alt="" />
       </div>
       <div className="login-form w-3/12  text-white bg-opacity-85 h-[650px] bg-black absolute p-8 top-0 bottom-0 my-52  right-0 left-0 mx-auto">
         <form
